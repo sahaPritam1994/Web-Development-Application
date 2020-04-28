@@ -1,0 +1,48 @@
+@import "../styles/mixins/breakpoints.scss";
+
+.locations {
+  background-color: black;
+  display: flex;
+
+  @include tablet() {
+    flex-direction: column;
+  }
+
+  @include mobile() {
+    flex-direction: column;
+  }
+}
+
+.locations__body {
+  padding: 55px;
+
+  h2, p {
+    color: floralwhite;
+    font-family: Tahoma;
+  }
+
+  @include mobile() {
+    margin-top: 15px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  color: darkgray;
+}
+
+.locations__map {
+  @include tablet() {
+    text-align: center;
+  }
+}
+
+img {
+  width: 700px;
+  height: 400px;
+
+  @include mobile() {
+    width: 100%;
+    height: 350px;
+  }
+}

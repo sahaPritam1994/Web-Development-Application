@@ -1,0 +1,83 @@
+@import "../styles/mixins/breakpoints.scss";
+
+.services {
+  background-image: url(https://www.axelerant.com/sites/default/files/2019-11/Legacy-Digital-Transformation.jpg);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-top: 1px solid rgb(114, 112, 112);
+
+  h2 {
+    color: floralwhite;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 70px;
+
+    @include mobile() {
+      padding: 0 30px;
+      font-size: 35px;
+      margin-top: 100px;
+    }
+  }
+
+  h2:before {
+    color: black;
+  }
+
+  @include mobile() {
+    height: 500px;
+  }
+}
+
+.services__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  @include mobile() {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.service--box {
+  border: 2px solid rgb(45, 45, 119);
+  padding: 0px;
+  width: 180px;
+  height: 180px;
+
+  @include mobile() {
+    width: 90%;
+    height: 50px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.fas {
+  padding: 40px;
+  padding-bottom: 0;
+  color: orangered;
+
+  @include mobile() {
+    font-size: 40px;
+    padding: 0 0 0 10px;
+  }
+}
+
+.services__items--label {
+  color: floralwhite;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 10px;
+
+  @include mobile() {
+    padding: 0;
+    margin-left: 20px;
+  }
+}

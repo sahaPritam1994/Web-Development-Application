@@ -1,0 +1,39 @@
+<header class="company">
+  <!-- <h2 class="company__header"> -->
+    <!-- <span class="company__header-first">COMPANY</span><span class="company__header-last"> LOGO</span> -->
+  <!-- </h2> -->
+  <div class="company__header">
+    <img src="https://www.axelerant.com/themes/custom/axe/logo.svg" alt="company logo" />
+    <nav class="company__navigation">
+      <ul class="company__navigation--links">
+        <li class="company__navigation--links-element"><a href="#">About</a></li>
+        <li class="company__navigation--links-element"><a href="#">Services</a></li>
+        <li class="company__navigation--links-element"><a href="#">Solutions</a></li>
+        <li class="company__navigation--links-element"><a href="#">Blog</a></li>
+        <li class="company__navigation--links-last company__navigation--links-element">
+          <a href="#">
+            <i class='far fa-comment-alt'></i>Get In Touch
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header__mobile" (window:resize)="onResize($event)">
+    <div class="header__mobile--nav">
+      <a href="#" class="hamburger--icon" (click)="toggleIcon()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div id="links">
+        <a href="#" class="links--items" (click)="toggleIcon('close')">About</a>
+        <a href="#" class="links--items" (click)="toggleIcon('close')">Services</a>
+        <a href="#" class="links--items" (click)="toggleIcon('close')">Solutions</a>
+        <a href="#" class="links--items" (click)="toggleIcon('close')">Blog</a>
+      </div>
+      <img src="https://www.axelerant.com/themes/custom/axe/logo.svg" alt="company logo" />
+      <a href="#" class="chat--icon">
+        <i class='far fa-comment-alt'></i>
+      </a>
+    </div>
+  </div>
+</header>

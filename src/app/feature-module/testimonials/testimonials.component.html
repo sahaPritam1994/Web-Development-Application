@@ -1,0 +1,24 @@
+<div class="testimonials">
+  <h1>Testimonials</h1>
+
+  <div class="testimonials__feedback">
+    <div class="testimonials__feedback--card" *ngFor="let set of testimonials">
+      <div class="testimonials__feedback--card-quote">
+        <i class="fas fa-quote-left"></i>
+        <p>{{ set["feedback"] }}</p>
+      </div>
+      <div class="quote-shape"></div>
+      <div class="testimonials__feedback--card-client">
+        <div class="client-image">
+          <i class="far fa-user-circle fa-4x"></i>
+        </div>
+        <div class="client-details">
+          <h2>{{ set["name"] }}</h2>
+          <div class="client-position">
+            <h4>{{ set["position"] }}, {{ set["company"] }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

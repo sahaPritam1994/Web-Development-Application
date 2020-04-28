@@ -1,0 +1,19 @@
+@import "../core/config.scss";
+
+@mixin mobile() {
+  @media only screen and (max-width: $mobile-cutoff) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media only screen and (max-width: $desktop-cutoff) and (min-width: $mobile-cutoff) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape() {
+  @media only screen and (max-width: $tablet-landscape-cutoff) and (min-width: $mobile-cutoff) {
+    @content;
+  }
+}
