@@ -6,22 +6,22 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Design & Technologies
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ During development, pure CSS(Grids, Flex) is used. No CSS Framework is used.
 
-## Build
+ The entire application is created as per Atomic Design.
+ 
+ Angular Framework is used. Version 7.2.0.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ As background images were not provided, some background images are taken from axelerant.com in order to match to the design provided.
+ 
+ Person's images are used as font-awesome icon in Testimonials section.
+ 
+ Font-awesome icons are used for different links.
 
-## Running unit tests
+ Application is created in such a way so that it supports desktop, tablet, mobile devices.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ I have tried to replicate the same as the designs provided.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ Only design has been created, no functionality is added.
